@@ -29,6 +29,9 @@ public class Cita {
     }
     
     //Setters
+    public void setId(int id){
+    this.id = id;
+    }
     public void setCliente(Cliente cliente){
         this.cliente = cliente;
     }
@@ -42,6 +45,10 @@ public class Cita {
         this.motivo = motivo;}
     
     //Getters
+    public int getId(){
+    return id;
+    }
+    
     public Cliente getCliente (){
     return cliente;
     }
@@ -59,6 +66,7 @@ public class Cita {
     //ToString
 @Override
 public String toString(){
+    String nombreCliente = (cliente != null) ?  cliente.getNombre() : "Sin Cliente";
     return "Cliente: " + cliente.getNombre() +
            " | Fecha: " + fecha +
            " | Hora: " + hora +

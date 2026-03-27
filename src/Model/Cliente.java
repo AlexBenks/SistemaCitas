@@ -25,6 +25,9 @@ public class Cliente {
     public Cliente(){
     }
     //Setters
+    public void setId(int id){
+    this.id = id;
+    }
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
@@ -32,6 +35,10 @@ public class Cliente {
         this.telefono = telefono;
     }
     //Getters
+    public int getId(){
+    return id;
+    }
+    
     public String getNombre(){
         return nombre;
     }
